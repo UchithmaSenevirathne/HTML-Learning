@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson - Forms</title>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <form action="http://google.com/api/v1/register" method="post">
+        <label for="fullName">Full Name :</label>
+        <input type="text" name="fullName" placeholder="Enter your full name" 
+        required
+        />
+
+        <br>
+
+        <label for="fullName">Gender :</label>
+        <label for="male">Male :</label>
+        <input type="checkbox" />
+        <label for="female">Female :</label>
+        <input type="checkbox" />
+
+        <br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date">
+
+        <br>
+
+        <textarea name="message" id="textarea" cols="30" rows="10" placeholder="Enter your message here..."></textarea>
+
+        <br>
+        
+        <input type="submit" value="Submit" />
+        <button type="reset">Cancel</button>
+    </form>
+</body>
+</html>

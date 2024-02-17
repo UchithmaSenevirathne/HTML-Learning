@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+    <style>
+        table {
+            border: 1px solid black;
+        }
+        td {
+            border: 1px solid rgb(14, 51, 216);   
+        }
+        th {
+            background-color: aquamarine;
+        }
+        table,td,th{
+            border-collapse: collapse;
+            padding-left: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 586px; margin-left: 10px;">
+        <thead>
+            <tr style="height: 50px;">
+                <th colspan="3">Personal Information</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height: 50px;">
+                <td>Name :</td>
+                <td colspan="2"><input type="text" name="name"></td>
+            </tr>
+            <tr style="height: 50px;">
+                <td>Age :</td>
+                <td colspan="2"><input type="text" name="age"></td>
+            </tr>
+            <tr style="height: 50px;">
+                <td rowspan="3">Address</td>
+                <td>Street :</td>
+                <td><input type="text" name="street"></td>
+            </tr>
+            <tr style="height: 50px;">
+                <td>City :</td>
+                <td><input type="text" name="city"></td>
+            </tr>
+            <tr style="height: 50px;">
+                <td>Zip Code :</td>
+                <td><input type="text" name="zipCode"></td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr style="height: 50px;">
+                <th colspan="3">Aditional Information</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height: 100px;">
+                <td colspan="3"><textarea name="message" id="textarea" cols="75" rows="5"></textarea></td>
+            </tr>
+            <tr style="height: 50px;">
+                <td colspan="3" s><input type="submit" value="SUBMIT" style="background-color: aquamarine; border-color: aquamarine; width: 100px; height: 30px;" /></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

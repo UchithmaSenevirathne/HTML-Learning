@@ -15,6 +15,9 @@
         td {
             border: 1px solid rgb(14, 51, 216);   
         }
+        table,td,th{
+            border-collapse: collapse;
+        }
     </style>
 </head>
 <body>
@@ -82,6 +85,82 @@
                 <td>1450</td>
             </tr>
         </tfoot>
+    </table>
+
+    <br>
+
+    <!--colspan-->
+
+    <table style="width: 400px; text-align: center;">
+            <tr style="height: 100px;">
+                <td colspan="2">1</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr style="height: 100px;">
+                <td>5</td>
+                <td colspan="3">6</td>
+            </tr>
+            <tr style="height: 100px;">
+                <td>9</td>
+                <td colspan="2">10</td>
+                <td>12</td>
+            </tr>
+            <tr style="height: 100px;">
+                <td colspan="3">13</td>
+                <td>16</td>
+            </tr>
+    </table>
+
+    <br>
+
+    <!--rowspan-->
+
+    <table style="width: 400px; text-align: center;">
+        <tr style="height: 100px;">
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr style="height: 100px;">
+            <td rowspan="3">6</td>
+            <td>7</td>
+            <td rowspan="3">8</td>
+        </tr>
+        <tr style="height: 100px;">
+            <td rowspan="2">9</td>
+            <td>11</td>
+        </tr>
+        <tr style="height: 100px;">
+            <td>15</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table style="width: 400px; text-align: center;">
+        <tr style="height: 100px;">
+            <td colspan="2" rowspan="2">1</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr style="height: 100px;">
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr style="height: 100px;">
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr style="height: 100px;">
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
     </table>
 </body>
 </html>
