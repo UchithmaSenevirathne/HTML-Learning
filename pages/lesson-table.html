@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson - Tables</title>
+    <style>
+        table {
+            border: 1px solid black;
+        }
+        th {
+            background-color: rgb(86, 235, 190);
+            border: 1px solid rgb(236, 5, 5);
+        }
+        td {
+            border: 1px solid rgb(14, 51, 216);   
+        }
+    </style>
 </head>
 <body>
-    <table border="1">
+    <table>
         <thead>
             <tr>
                 <th>First Name</th>
@@ -36,6 +48,40 @@
             </tr>
         </tbody>
         <tfoot></tfoot>
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>QTY</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--table data-->
+            <td>Sunlight</td>
+            <td>5</td>
+            <td>1000</td>
+            </tr>
+
+            <tr>
+                <!--table data-->
+            <td>Clogate</td>
+            <td>2</td>
+            <td>450</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td style="height: 100px;">Total</td>
+                <td style="border: 0px;"></td>
+                <td>1450</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
