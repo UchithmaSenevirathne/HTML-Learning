@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-pseudo</title>
+    <style>
+        button {
+            background-color: black;
+            color: white;
+            width: 100px; height: 40px;
+            border-radius: 5px;
+        }
+
+        /* pseudo classes */
+        button:hover {
+            background-color: greenyellow;
+            color: black;
+            cursor: pointer;
+        }
+        button:active {
+            background-color: rgb(78, 126, 7);
+            color: white; 
+        }
+        li:first-child {
+            color: red;
+        }
+        li:nth-child(3) {
+            color: green;
+        }
+        li:last-child {
+            color: royalblue;
+        }
+        /* pseudo elements */
+        p::before {
+            content: "Read This...";
+            color: red;
+        }
+        p::after {
+            content: "...The End";
+            color: red;
+        }
+        p::first-letter {
+            font-size: 30px;
+            color: black;
+        }
+        p::first-line {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lesson Pseudo</h1>
+
+    <h2>=====pseudo classes======</h2>
+    <button>Click Here</button>
+
+    <ul>
+        <li>java</li>
+        <li>java-script</li>
+        <li>html</li>
+        <li>css</li>
+    </ul>
+
+    <h2>=====pseudo elements======</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Iusto commodi, ea nobis aliquam et harum, praesentium
+        soluta laudantium aliquid, accusantium eum quibusdam non
+        rerum excepturi. Cum provident impedit consequuntur sed
+        reprehenderit similique ab aperiam quibusdam laborum dicta,
+        aut ut. Voluptate ipsa veritatis illum! Omnis repellat magni
+        libero soluta saepe vel ut dolore deserunt facilis suscipit.
+        Porro similique provident sapiente voluptatibus ad voluptates
+        perspiciatis accusamus, quod dignissimos! Itaque totam corporis
+        ipsum, suscipit voluptate ab commodi voluptatibus eaque non
+        dolorem voluptates doloribus ad praesentium perspiciatis mollitia quo,
+        sit repudiandae, veniam saepe? Eligendi similique molestias provident
+        quidem laboriosam in distinctio dolores natus officia.
+    </p>
+</body>
+</html>
