@@ -4,13 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lesson-css-grid layout</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: 500px 500px 500px 500px; */
+            /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+        .container > div {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        /* .container > div:nth-child(odd) {
+            background-color: lightseagreen;
+        } */
+        .container > div:nth-child(5){
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .container > div:nth-child(5) > div {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
 </head>
 <body>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div>
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+        </div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+    </div>
 </body>
 </html>
