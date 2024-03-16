@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sofia Sans", sans-serif;
+}
+
+/*Intro*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    color: rgb(18, 182, 160);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: rgb(167, 167, 167);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a:hover {
+    color: rgb(18, 182, 160);
+}
+
+.about {
+    min-height: 650px;
+}
+
+.about-container {
+    background-color: whitesmoke;
+    margin: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.about-content {
+   padding: 9% 5%;
+}
+
+.about-content h2 {
+    margin-bottom: 50px;
+}
+
+.about-content h2 > span {
+    color: rgb(18, 182, 160);
+}
+
+.about-content p {
+    line-height: 2;
+    font-size: 18px;
+    color: rgb(97, 97, 97);
+}
+
+.smedia {
+    position: relative;
+    top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    text-decoration: none;
+    color: rgb(12, 134, 118);
+}
+
+.about-container img {
+    border-radius: 20px 0 0px 20px;
+}
+
+.skills {
+    min-height: 1000px;
+    background-color: whitesmoke;
+}
+
+.skills h2 {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(18, 182, 160);
+}
+
+.box-container {
+    margin: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.box {
+    align-items: center;
+    box-shadow: 2px 2px 20px 5px rgb(170, 170, 170);
+    padding: 25% 35%;
+    border-radius: 20px;
+}
+
+.box p {
+    padding-top: 25px;
+    text-align: center;
+    color: rgb(112, 112, 112);
+    font-weight: 650px;
+    font-size: 20px;
+}
+
+.box p:hover {
+    color: black;
+}
+
+.box:hover {
+    background-color: white;
+}
