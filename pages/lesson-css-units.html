@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-css-units</title>
+    <style>
+        .box {
+            height: 100px;
+            border: 1px solid black;
+            background: linear-gradient(rgb(17, 207, 198), rgb(32, 139, 182));
+        }
+
+        .box-pixels {
+            width: 300px;
+        }
+
+        .box-percentage {
+            width: 50%;
+        }
+        .box2 {
+            width: 100vw;
+            background-color: rgb(5, 151, 151);
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box-pixels">PIXELS</div>
+    <div class="box box-percentage">PERCENTAGE</div>
+
+    <hr>
+
+    <div style="width: 50%; height: 400px; background: rgb(0, 0, 0);">
+        <div style="width: 200px; height: 200px; background-color: rgb(214, 79, 185);">PIXELS</div>
+        <div style="width: 50%; height: 200px; background-color: rgb(108, 108, 236);">PERCENTAGE</div>
+    </div>
+
+    <hr>
+
+    <div class="box2">View Port Width</div>
+
+    <hr>
+
+    <div style="font-size: 1rem;">Hello World !</div>
+    <div style="font-size: 2rem;">Hello World !</div>
+    <div style="font-size: 3rem;">Hello World !</div>
+    <div style="font-size: 4rem;">Hello World !</div>
+
+    <hr>
+    
+    <div style="font-size: 10px;">
+        <div style="font-size: 1em;">Hello World !</div>
+        <div style="font-size: 2em;">Hello World !</div>
+        <div style="font-size: 3em;">Hello World !</div>
+        <div style="font-size: 4em;">Hello World !</div>
+    </div>
+</body>
+</html>

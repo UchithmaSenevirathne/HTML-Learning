@@ -1,0 +1,32 @@
+p {
+    color: teal;
+}
+
+.content {
+    color: red;
+}
+#content-id {
+    color: blueviolet;
+}
+h4 {
+    color: teal;
+}
+.card-title {
+    color: rgb(121, 74, 207);
+}
+#recipe-card-title {
+    color: red;
+}
+div h4 {
+    color: aqua;
+}
+/*combinators*/
+div .card-title {
+    color: darkblue;
+}
+div #recipe-card-title {
+    color: green;
+}
+.card .card-title {
+    color: darkblue;
+}

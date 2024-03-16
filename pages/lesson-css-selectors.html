@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-css-selectors</title>
+    <style>
+        /*element selector*/
+        h2 {
+            color: rgb(68, 68, 170);
+        }
+        /*id selector*/
+        #main-heading {
+            color: rgb(22, 180, 22);
+        }
+        /*class selector*/
+        .heading-selector {
+            color: rgb(104, 19, 104);
+        }
+        /*attribute selector*/
+        input[type="text"] {
+            background-color: aquamarine;
+            border: none;
+        }
+        input[type="number"] {
+            background-color: pink;
+            border: none;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        /* pseudo classes */
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+        button:active {
+            background-color: greenyellow;
+            color: black;
+        }
+        /*pseudo elements*/
+        p::first-line{
+            font-weight: bold;
+        }
+        p::first-letter{
+            font-size: 30px;
+            color: green;
+        }
+        /*descendant selector (white space combinate)*/
+        div h5 {
+            font-size: 18px;
+            color: rgb(202, 60, 34);
+        }
+        div div h5 {
+            font-size: 18px;
+            color: rgb(124, 25, 124);
+        }
+        /*child selector*/
+        div > h6 {
+            font-size: 16px;
+            font-weight: bold;
+            font-style: italic;
+            color: slateblue;
+        }
+        /*adjacent sibling selector*/
+        h2 + p {
+            background-color: rgb(36, 145, 36);
+        }
+        /*general sibling selector*/
+        h3 ~ p {
+            background-color: tomato;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+
+    ===== 1. element selector =====
+    <br>
+    <h2>element selector</h2>
+    <br>
+    ===== 2. id selector =====
+    <br>
+    <h2 id="main-heading">id selector</h2>
+    <br>
+    ===== 3. class selector =====
+    <br>
+    <h2 class="heading-selector">class selector</h2>
+    <h3 class="heading-selector">class selector</h3>
+    <h4 class="heading-selector">class selector</h4>
+    <br>
+    ===== 4. attribute selector =====
+    <br>
+    <br>
+    <input type="text" placeholder="enter your full name">
+    <br>
+    <input type="number" placeholder="enter your age">
+    <br>
+    <br>
+    ===== 5. pseudo classes selector =====
+    <br>
+    <br>
+    <button>Click Here</button>
+    <br>
+    <br>
+    ===== 6. pseudo element selector =====
+
+    <br>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti eaque rem quo error reiciendis totam maxime.
+        Deleniti illum odio eius iure quasi corrupti modi,
+        nam fuga pariatur, facilis impedit, itaque obcaecati
+        doloremque exercitationem quam delectus numquam odit totam alias.
+        Temporibus accusamus quaerat autem ratione quae odit explicabo numquam harum est!
+    </p>
+    <br>
+    ===== 7. descendant selector (white space combinate) =====
+    <br>
+    <div>
+        <h5>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Adipisci assumenda repudiandae ullam quae. Possimus, fuga.
+            Eveniet quisquam laudantium ex iusto cum fuga libero in voluptatibus
+            facere natus eaque harum illo exercitationem quod necessitatibus neque
+            placeat mollitia porro amet quibusdam, facilis perspiciatis a esse ipsa?
+            Perspiciatis ipsam culpa sapiente dicta veniam!
+        </h5>
+        <div>
+            <h5>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Adipisci assumenda repudiandae ullam quae. Possimus, fuga.
+                Eveniet quisquam laudantium ex iusto cum fuga libero in voluptatibus
+                facere natus eaque harum illo exercitationem quod necessitatibus neque
+                placeat mollitia porro amet quibusdam, facilis perspiciatis a esse ipsa?
+                Perspiciatis ipsam culpa sapiente dicta veniam!
+            </h5>
+        </div>
+    </div>
+    <br>
+    ===== 8. child selector (>) =====
+    <br>
+    <div>
+        <h6>java</h6>
+        <h6>python</h6>
+        <h6>c++</h6>
+        <h6>ruby</h6>
+    </div>
+    <br>
+
+    ===== 9. adjacent sibling selector (+) =====
+    <br>
+
+    <h2>Heading 2</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Officiis ab voluptas quisquam asperiores, laboriosam libero omnis exercitationem fuga nulla veniam.
+        Fugiat quos ut molestiae minus fugit modi iusto, eligendi reprehenderit.
+        Assumenda temporibus dolore molestias quas, amet atque aspernatur pariatur quae autem nam dolor aut,
+        quod excepturi? Vitae ab doloremque explicabo.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Officiis ab voluptas quisquam asperiores, laboriosam libero omnis exercitationem fuga nulla veniam.
+        Fugiat quos ut molestiae minus fugit modi iusto, eligendi reprehenderit.
+        Assumenda temporibus dolore molestias quas, amet atque aspernatur pariatur quae autem nam dolor aut,
+        quod excepturi? Vitae ab doloremque explicabo.
+    </p>
+    <br>
+
+    ===== 9. general sibling selector (~) =====
+
+    <br>
+
+    <h3>Headding 3</h3>
+    <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reprehenderit doloribus numquam incidunt,
+       aliquam similique architecto quaerat perferendis beatae sit minima ea unde illum ad porro illo reiciendis qui ut.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reprehenderit doloribus numquam incidunt,
+        aliquam similique architecto quaerat perferendis beatae sit minima ea unde illum ad porro illo reiciendis qui ut.
+     </p>
+     <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reprehenderit doloribus numquam incidunt,
+        aliquam similique architecto quaerat perferendis beatae sit minima ea unde illum ad porro illo reiciendis qui ut.
+     </p>
+    <br>
+</body>
+</html>
