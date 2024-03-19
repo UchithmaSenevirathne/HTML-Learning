@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            margin-top: 400px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .box {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50px;
+            animation: up-down 3s ease-in-out infinite;
+        }
+
+        .box:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        .box:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        .box:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        .box:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+        .box:nth-child(5) {
+            animation-delay: 1s;
+        }
+
+        @keyframes up-down {
+            0% , 100% {
+               transform: translateY(0);
+            }
+            25% , 75% {
+                background-color: lightseagreen;
+                transform: translateY(-50px);
+            }
+            50% {
+                background-color: greenyellow;
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
