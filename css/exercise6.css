@@ -52,7 +52,7 @@
 }
 
 .about-content {
-   padding: 9% 5%;
+   padding: 9% 5% 0 5%;
 }
 
 .about-content h2 {
@@ -71,7 +71,7 @@
 
 .smedia {
     position: relative;
-    top: 40px;
+    top: 30px;
     display: flex;
     gap: 20px;
 }
@@ -98,7 +98,7 @@
 }
 
 .box-container {
-    margin: 10%;
+    margin: 5% 10%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 50px;

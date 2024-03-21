@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-css-animation</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .box {
+            position: relative;
+            top: 100px;
+            left: 100px;
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            /* animation-name: square;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 2s; */
+            /* animation: square 10s linear infinite 2s; */
+            animation: up-down 10s linear infinite 2s;
+        }
+
+        @keyframes square {
+            /* from { background-color: lightseagreen; }
+            to { background-color: lightsalmon; } */
+            0% {
+                background-color: blue;
+                border-radius: 10px;
+                left: 100px;
+                top: 100px;
+                transform: scale(1);
+            }
+            25% {
+                background-color: yellow;
+                border-radius: 16px;
+                left: 500px;
+                top: 100px;
+                transform: scale(2);
+            }
+            50% {
+                background-color: red;
+                border-radius: 32px;
+                left: 500px;
+                top: 500px;
+                transform: scale(1);
+            }
+            75% {
+                background-color: orangered;
+                border-radius: 50px;
+                left: 100px;
+                top: 500px;
+                transform: scale(2);
+            }
+            100% {
+                background-color: indigo;
+                border-radius: 0px;
+                left: 100px;
+                top: 100px;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes up-down {
+            0% {
+                background-color: blue;
+                transform: translateY(0);
+            }
+            25% {
+                background-color: yellow;
+                transform: translateY(-50px);
+            }
+            50% {
+                background-color: red;
+                transform: translateY(50px);
+            }
+            75% {
+                background-color: orangered;
+                transform: translateY(-50px);
+            }
+            100% {
+                background-color: indigo;
+                transform: translateY(0px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

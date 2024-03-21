@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-Transitions</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 250px;
+            background-color: limegreen;
+            margin: 200px auto;
+            /* transition-property: width,background-color;      /*====transition karana property eke nama===*/
+            /*transition-duration: 5s;
+            transition-timing-function: ease;
+            transition-delay: 2s; */
+            transition: all 5s ease 1s;      /*===property, duration, timing-function, delay===*/
+        }
+
+        .box:hover {
+            width: 250px;
+            background-color: aqua;
+        }
+
+        p {
+            text-align: center;
+            transition: all 5s ease 0s;
+        }
+
+        p:hover {
+            color: orangered;
+            font-size: 50px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p>Hello World !!!</p>
+</body>
+</html>
