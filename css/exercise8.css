@@ -45,6 +45,11 @@ h1 {
     color: orange;
 }
 
+.scroll-review {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
 @media screen and (max-width: 575px) and (min-width: 0px){
     .card-container {
         grid-template-columns: repeat(1 , 1fr);
