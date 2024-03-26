@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sofia Sans", sans-serif;
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    color: teal;
+}
+
+.card-container {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    gap: 50px;
+}
+
+.card {
+    box-shadow: 2px 2px 20px 5px rgb(170, 170, 170);
+    border-radius: 20px;
+    padding: 30px;
+    background-color: white;
+}
+
+.card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-heading img {
+    border-radius: 5000px;
+    object-fit: cover;
+}
+
+.card-content p:nth-child(2) {
+    text-align: right;
+    color: rgb(73, 73, 73);
+}
+
+.checked {
+    color: orange;
+}
+
+.scroll-review {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 575px) and (min-width: 0px){
+    .card-container {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+    .card-heading {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px){
+    .card-container {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+    .card-container {
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px){
+    .card-container {
+        grid-template-columns: repeat(4 , 1fr);
+    }
+}
+
+@media screen and (max-width: 1399px) and (min-width: 1200px){
+    .card-container {
+        grid-template-columns: repeat(5 , 1fr);
+    }
+}
