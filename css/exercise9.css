@@ -48,7 +48,7 @@
         display: inline-block;
     }
 
-    .menu .fa-bars {
+    .menu {
         display: none;
     }
 }
