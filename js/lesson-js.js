@@ -1,3 +1,6 @@
+ var batchName = 'B68'
+ let classDate = 'Saturday'
+
 console.log("HELLO JAVASCRIPT !")
 
 console.log("Add : ", (10 + 20))
