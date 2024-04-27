@@ -32,3 +32,10 @@ console.log('type of phoneNumber : ', typeof phoneNumber)
 // 6. Symbol - introduced in ECMAScript 6(ES6) , symbols are unique and immutable primitive value
 let symbol = Symbol('First Name')
 console.log('type of symbol : ', symbol)
+
+// 7. BigInt
+const number1 = 5456846854548584684648n
+const number2 = 100
+
+const result = number1 + BigInt(number2);
+console.log(result)
