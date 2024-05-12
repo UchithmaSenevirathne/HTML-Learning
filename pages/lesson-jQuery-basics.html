@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson JQuery Basics</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        //javascript
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('executes once the DOM is fully loaded - JavaScript');
+            // document.getElementById('box').style.backgroundColor = 'seagreen';
+        });
+
+        // jQuery
+        $(document).ready(function(){
+            console.log('executes once the DOM is fully loaded - jQuery');
+
+            $('#box').css('background-color', 'seagreen')
+            $('#box').css('border-color', 'red')
+            $('#box').css('border-radius', '100px')
+            $('#box').addClass('rectangle')
+        });
+    </script>
+</body>
+</html>

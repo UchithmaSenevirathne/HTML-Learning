@@ -18,3 +18,17 @@ console.log(boxes)
 //tag selector
 let headingOne = document.getElementsByTagName('h1')
 console.log(headingOne)
+
+//query selector
+let button = document.querySelector('#btnCalculate')
+console.log(button)
+
+let testDiv = document.querySelector('.test-div')
+console.log(testDiv)
+
+let box = document.querySelectorAll('.box')
+console.log(box)
+
+let boxes2 = document.querySelector('#container .box')
+console.log(boxes2)
+
